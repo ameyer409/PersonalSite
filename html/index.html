@@ -1,52 +1,177 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Allan Meyer - Java Full-Stack</title>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="./css/main.css">
-
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+  </style>
 </head>
 <body>
-
-	<div class="container">
-		<h1>Allan</h1>
-
-		<img class="main-page-img float-end" src="images/Duke_waving.svg" alt="Java Duke">
-
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	</div>
-	<div class="container text-center">
-		<div class="row">
-			<div class="col">
-				<p > Make Change Project </p>
-			</div>
-			<div class="col">
-				Jets Project
-			</div>
+	<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+		<div class="container-fluid">
+		  <a class="navbar-brand" href="#">Navbar</a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+			  <li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="#home">Home</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link active" href="#">About</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link active" href="#project">Projects</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link active" href="#">Contact Me</a>
+			  </li>
+			</ul>
+		  </div>
 		</div>
-		<div class="row">
-			<div class="col">	
-				<a href="https://github.com/ameyer409/MakeChangeProject">
-					<img src="https://imgs.search.brave.com/KOt54okPZhF-yBsIYP89YG2-cyKtRdMPszIIx7Ras3s/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTc1/Mzk0NjUwL3Bob3Rv/L29sZC1zaWx2ZXIt/dXMtY29pbnMuanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPUla/T0FaNVM3U2RFVXNp/aWxJSmgyQTd0Y0tt/d19UaW12OFE4RzUx/UFZzNDA9" width="240px" height="160px">
+	  </nav>
 
-				</a>
-			</div>
-			<div class="col">
-				<a href="https://github.com/ameyer409/JetsProject">
-					<img src="https://imgs.search.brave.com/qB-lLxBk3dFcG-JxEgZ-gpobH-Ya-CkedPFln-eeyu0/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTU3/Mjc4MTIyL3Bob3Rv/L2YxNS1maWdodGVy/LWpldHMtZmx5aW5n/LmpwZz9zPTYxMng2/MTImdz0wJms9MjAm/Yz1ZYmZfMGxmdEhI/Y01waVJRWFhzWFZT/WjYxa1dZdlV1Mk9D/MlYtcXg2YVZVPQ" width="240px" height="160px">
-				</a>
-			</div>
+<!-- <nav class="navbar navbar-inverse sticky-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Portfolio</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul> 
+    </div>
+  </div>
+</nav> -->
+
+<div class="p-5 mb-4 bg-body-tertiary rounded-3" id="home">
+	<div class="container-fluid py-5">
+	  <h1 class="display-5 fw-bold text-center">Skill Distillery Project Portfolio</h1>
+	  <p class="col-md-8 offset-md-2 justify-content-center fs-4 text-center">
+		Here is a sampling of the projects I worked on while enrolled at Skill Distillery.
+		These projects range from beginner Java projects that run in the console, to Java full stack
+		projects utilizing angular, mysql and Spring boot.
+	  </p>
+	</div>
+  </div>
+  
+<div class="container-fluid bg-3 text-center" id="project">    
+  <h3>Work Samples</h3><br>
+  <div class="row">
+    <div class="col-sm-3">
+      <p>Make Change Project</p>
+      <a href="https://github.com/ameyer409/JetsProject">
+		<img src="https://imgs.search.brave.com/KOt54okPZhF-yBsIYP89YG2-cyKtRdMPszIIx7Ras3s/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTc1/Mzk0NjUwL3Bob3Rv/L29sZC1zaWx2ZXIt/dXMtY29pbnMuanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPUla/T0FaNVM3U2RFVXNp/aWxJSmgyQTd0Y0tt/d19UaW12OFE4RzUx/UFZzNDA9" class="img-responsive" style="width:100%" alt="Image">
+	  </a>
+    </div>
+    <div class="col-sm-3"> 
+		<p>Food Truck Project</p>
+		<a href="https://github.com/ameyer409/FoodTruckProject">
+		  <img src="https://camo.githubusercontent.com/fc017c5965b90518992dfae8470bb1b93c5718d5261b1492406f85f4bd7579a2/68747470733a2f2f696d67732e7365617263682e62726176652e636f6d2f5059556152696b6f39633656716b63363043354b65785a556a4d724a2d71464276326f385a34322d456f772f72733a6669743a3836303a303a302f673a63652f6148523063484d364c7939745a5752702f595335706333527659327477614739302f6279356a62323076615751764d5441352f4d4445354d5449304e693977614739302f6279397a61576475596d3968636d51742f623259745953316d6232396b4c5852792f64574e724c58647064476774593239732f62334a6d6457777463475675626d46752f64484d75616e426e50334d394e6a45792f654459784d695a335054416d617a30792f4d435a6a505638744e574672625756302f645649306155685a62475a5054304e552f6132356b597a6b745a324a34515870562f4e6d3168626c7079656b465057545139" class="img-responsive" style="width:100%" alt="Image">
+		</a>
+    </div>
+    <div class="col-sm-3"> 
+      <p>Jets Project</p>
+      <a href="https://github.com/ameyer409/JetsProject">
+		<img src="https://imgs.search.brave.com/qB-lLxBk3dFcG-JxEgZ-gpobH-Ya-CkedPFln-eeyu0/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTU3/Mjc4MTIyL3Bob3Rv/L2YxNS1maWdodGVy/LWpldHMtZmx5aW5n/LmpwZz9zPTYxMng2/MTImdz0wJms9MjAm/Yz1ZYmZfMGxmdEhI/Y01waVJRWFhzWFZT/WjYxa1dZdlV1Mk9D/MlYtcXg2YVZVPQ" class="img-responsive" style="width:100%" alt="Image">
+	  </a>
+    </div>
+    <div class="col-sm-3">
+		<p>BlackJack Project</p>
+		<a href="https://github.com/ameyer409/BlackjackProject">
+		  <img src="https://imgs.search.brave.com/oJwj1VgXk5ncE1xbh0gJScs8C3tD9ISm7C-v1coZvcI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9i/bGFja2phY2stY2Fy/ZHMtcmVkLXRhYmxl/XzE0MjMtMTU0Lmpw/Zz9zaXplPTYyNiZl/eHQ9anBn" class="img-responsive" style="width:100%" alt="Image">
+		</a>
+    </div>
+  </div>
+</div><br>
+
+<div class="container-fluid bg-3 text-center">    
+  <div class="row">
+    <div class="col-sm-3">
+      <p>JPA Toe Stub Project</p>
+	  <a href="https://github.com/ameyer409/JPACRUDProject">
+		  <img src="./images/toe-stub.jpeg" class="img-responsive" style="width:100%" alt="Image">
+		</a>
+    </div>
+    <div class="col-sm-3"> 
+		<p>Midterm Project: Rate My Student</p>
+		<a href="https://github.com/ameyer409/SDMidtermProject">
+			<img src="./images/rate-my-student.png" class="img-responsive" style="width:100%" alt="Image">
+		</a>
+		<a href="https://github.com/ameyer409/SDMidtermProject">GitHub Link</a>
+	</div>
+    <div class="col-sm-3"> 
+		<p>Event Tracker Project: GameTracker</p>
+		<a href="http://52.3.16.232:8080/GameTrackerREST/#/">
+		  <img src="./images/Game-Tracker-image.jpeg" class="img-responsive" style="width:100%" alt="Image">
+		</a>
+		<a href="https://github.com/ameyer409/EventTrackerProject">GitHub Link</a>
+    </div>
+    <div class="col-sm-3">
+		<p>Final Project: Job Board</p>
+		<a href="https://github.com/ameyer409/SDFinalProject">
+			<img src="./images/Enchanted-Realm-Full-Metal-Vertical.png" class="img-fluid" style="width:100%" alt="Image">
+		</a>
+		<a href="https://github.com/ameyer409/SDFinalProject">GitHub Link</a>
+    </div>
+  </div>
+</div><br><br>
+
+<footer class="container-fluid bg-3 text-center">
+	<h1 class="display-6 fw-bold text-center">Contact Me</h1>
+	<div class="row">
+		
+		<div class="col-sm-2 offset-md-3">
+			<a href="https://www.linkedin.com/in/allanmeyer409/">
+				<img src="./images/linkedin-logo.png" class="img-fluid" style="max-width:100%; height: auto; max-height: 50px;" alt="Image">
+			</a>
+			<p>Linked-In</p>
+		</div>
+		<div class="col-sm-2">
+			<p>Email</p>
+			<p>ameyer409@gmail.com</p>
+		</div>
+		<div class="col-sm-2">
+			<a href="https://github.com/ameyer409">
+				<img src="./images/github-logo.png" class="img-fluid" style="max-width:100%; height: auto; max-height: 50px;" alt="Image">
+			</a>
+			<p>Github Profile</p>
 		</div>
 	</div>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</footer>
 </body>
 </html>
+
+
+
+
